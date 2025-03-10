@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /* fonts */
+    --font-family-PS2P: 'PressStart2P';
+    --font-family-Inter: Inter;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* colors */
+    --themes-background: #ffffff;
+    --themes-mainColor: #000000;
+}

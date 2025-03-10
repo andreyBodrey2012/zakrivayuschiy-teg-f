@@ -13,4 +13,312 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-Inter);
+  font-variation-settings: wght(400);
+  background-image: url(./../images/background.png), linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+}
+
+.title-header {
+  font-family: var(--font-family-PS2P);
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 49px;
+  justify-self: center;
+}
+
+.subtitle-header {
+  font-family: var(--font-family-PS2P);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  justify-self: center;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--themes-background);
+  justify-self: center;
+  margin-top: 100px;
+  padding-top: 121px;
+  padding-bottom: 120px;
+  border: 1px var(--themes-mainColor) solid;
+}
+
+.container-card {
+  margin-top: 102px;
+}
+
+.card-title {
+  font-family: var(--font-family-Inter);
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 21.78px;
+  padding-left: 9px;
+  border: 2px var(--themes-mainColor) solid;
+  padding-bottom: 6px;
+}
+
+.card {
+  border: 2px solid var(--themes-mainColor);
+  margin-top: 51px;
+  padding-bottom: 22px;
+  background-color: var(--themes-background);
+}
+
+.card-text, .card-sup-text {
+  font-family: var(--font-family-Inter);
+  font-weight: var(--font-weight-normal);
+  font-size: 18px;
+  line-height: 21px; 
+  margin-top: 24px;
+  margin-left: 26px;
+  padding-right: 25px;
+}
+
+.card-sup-text {
+  margin-top: 25px;
+}
+
+.button__text {
+  font-family: var(--font-family-PS2P);
+  font-weight: var(--font-weight-normal);
+  font-size: 14px;
+  line-height: 12.6px;
+}
+
+.button__text:focus {
+  outline: none;
+  box-shadow: 2px 2px 0.3s ease var(--themes-mainColor);
+}
+
+.button__text {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-text {
+  font-family: var(--font-family-PS2P);
+  font-weight: var(--font-weight-normal);
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: var(--themes-mainColor);
+  position: absolute;
+  -webkit-text-stroke: var(--themes-background) 0.7px;
+  opacity: 50%;
+}
+
+.wrap-img {
+  position: relative;
+}
+
+.wrap-img::after {
+  position: absolute;
+  content: attr(data-label);
+  inset: 26px 10px auto auto;
+  font-family: var(--font-family-PS2P);
+  font-weight: var(--font-weight-normal);
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: var(--themes-mainColor);
+  -webkit-text-stroke: var(--themes-background) 0.7px;
+  opacity: 50%;
+}
+
+.post-image {
+  max-width: 100%;
+}
+
+/* brightness — яркость элемента. ... */
+.filter-brightness {
+  filter: brightness();
+}
+
+/* contrast — контрастность элемента, указывается в процентах. ... */
+.filter-contrast {
+  filter: contrast();
+}
+
+/* grayscale — оттенки серого. ... */
+.filter-grayscale {
+  filter: grayscale(0.7);
+}
+
+/* hue-rotate — меняет оттенок элемента. ... */
+.filter-hue-rotate-1 {
+  filter: hue-rotate(20deg);
+}
+
+.filter-hue-rotate-2 {
+  filter: hue-rotate(80deg);
+}
+
+/* invert — инвертирует цвета элемента. ... */
+.filter-invert {
+  filter: invert();
+}
+
+/* opacity — прозрачность элемента. ... */
+.filter-opacity {
+  filter: opacity();
+}
+
+/* saturate — насыщенность элемента. */
+.filter-saturate {
+  filter: saturate(5);
+}
+
+.filter-sepia {
+  filter: sepia();
+}
+
+.filter-blur {
+  filter: blur(7px);
+}
+
+.save-button {
+  all: unset;
+
+  display: inline-flex;
+  padding: 15px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 2px solid var(--themes-mainColor);
+  margin-left: 32px;
+  margin-top: 55px;
+  margin-bottom: 102px;
+  background-color: var(--themes-background);
+  position: relative;
+}
+
+.save-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--themes-mainColor);
+  transform: scaleX(0);
+  transform-origin: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.save-button:hover::before {
+  transform: scaleX(1);
+}
+
+.save-button > svg {
+  block-size: 28px;
+}
+
+.card__like-button {
+  background-color: var(--themes-background);
+  border: 2px var(--themes-mainColor) solid;
+  padding: 9px 35px;
+  margin-left: 217px;
+  margin-top: 25px;
+}
+
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
+
+.dialOK {
+  width: clamp(30rem, 20px, 50rem);
+  height: clamp(12rem, 20px, 50rem);
+  padding: 34px 43px;
+}
+
+.dialOK > div > svg {
+  block-size: 39px;
+  min-width: 39px;
+}
+
+.title-dialok {
+  font-family: var(--font-family-PS2P);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.ok-button {
+  padding: 10px 112.5px;
+  background-color: var(--themes-background);
+  margin-top: 21px;
+}
+
+.ok-text-container {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.title-dialok::backdrop {
+  backdrop-filter: brightness(26%);
+}
+
+@media (width >= 1440px) {
+  .title-header {
+    font-size: 65px;
+  }
+
+  .subtitle-header {
+    font-size: 23px;
+    margin-top: 34px;
+  }
+
+  .container {
+    width: clamp(44rem, 30px, 50rem);
+    padding-top: 135px;
+    padding-bottom: 132px;
+  }
+
+  .container-card {
+    width: clamp(44rem, 20px, 50rem);
+    justify-self: center;
+  }
+
+  .wrap-img::after {
+    inset: 26px 27px auto auto;
+  }
+
+  .card__like-button {
+    margin-left: 543px;
+    margin-top: 22px;
+  }
+
+  .page {
+    background-image: url(./../images/background_desk.png), linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  }
+
+  .save-button {
+    flex-direction: unset;
+    gap: 5px;
+    padding: 12px 21px;
+    margin-left: 181px;
+    margin-top: 51px;
+  }
+
+  .save-button > svg {
+    block-size: 24px;
+  }
+
+  .ok-button {
+    padding: 8px 130.5px;
+    margin-top: 25px;
+  }
+
+  .dialOK {
+    width: clamp(22rem, 20px, 50rem);
+  }
 }
