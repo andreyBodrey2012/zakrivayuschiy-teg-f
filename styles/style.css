@@ -341,13 +341,13 @@
     inset: 25px 25px auto auto;
   }
 
-  .save-button {
+  .button__save {
     flex-direction: unset;
     gap: 5px;
     padding: 12px 21px;
   }
 
-  .save-button > svg {
+  .button__save > svg {
     block-size: 24px;
   }
 
