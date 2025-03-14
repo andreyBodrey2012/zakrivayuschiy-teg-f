@@ -332,13 +332,13 @@
 
 @media (width > 375px) {
   .container {
-    width: clamp(23.5rem, 100vw, 43.75rem);
+    width: clamp(23.5rem, 100%, 43.75rem);
     padding-top: 135px;
     padding-bottom: 132px;
   }
 
   .container-card {
-    width: clamp(23.5rem, 100vw, 43.75rem);
+    width: clamp(23.5rem, 100%, 43.75rem);
     justify-self: center;
   }
 
