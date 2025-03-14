@@ -37,8 +37,8 @@
 }
 
 .subtitle-header {
-  margin-top: clamp(20px, 18.75vw, 34px);
-  font-size: clamp(0.875rem, 4.8vw, 1.4375rem);
+  margin-top: clamp(20px, 18.75vw, 20px);
+  font-size: clamp(0.875rem, 2.8vw, 1.4375rem);
 }
 
 .container {
@@ -97,6 +97,7 @@
   cursor: pointer;
   border: 2px solid var(--color-text);
   background-color: var(--color-back-text);
+  transition: transform 0.5s ease-in-out;
   outline: none;
 }
 
@@ -180,6 +181,10 @@
   width: 100%;
   margin-top: 21px;
   text-transform: uppercase;
+}
+
+.dialog-window__button > .button__text {
+  padding: 13px 0;
 }
 
 .button__save {
@@ -300,7 +305,7 @@
   text-transform: uppercase;
 }
 
-.text-container__ok {
+.text-container {
   display: flex;
   flex-direction: row;
   gap: 17px;
