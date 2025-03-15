@@ -37,7 +37,7 @@
 }
 
 .subtitle-header {
-  margin-top: clamp(20px, 18.75vw, 20px);
+  margin-top: 20px;
   font-size: clamp(0.875rem, 2.8vw, 1.4375rem);
 }
 
@@ -46,8 +46,7 @@
   background-color: var(--color-back-text);
   justify-content: center;
   margin: 100px auto 0;
-  padding-top: 121px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   border: 2px var(--color-text) solid;
 }
 
@@ -97,7 +96,8 @@
   cursor: pointer;
   border: 2px solid var(--color-text);
   background-color: var(--color-back-text);
-  transition: transform 0.5s ease-in-out;
+  box-shadow: 2px 2px 0 0 transparent;
+  transition: box-shadow 0.3s ease;
   outline: none;
 }
 
@@ -333,8 +333,7 @@
 @media (width > 375px) {
   .container {
     width: clamp(23.5rem, 100%, 43.75rem);
-    padding-top: 135px;
-    padding-bottom: 132px;
+    padding: 128px 0;
   }
 
   .container-card {
